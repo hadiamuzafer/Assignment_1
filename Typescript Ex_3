@@ -1,0 +1,6 @@
+//Q3
+//Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+
+var firstname_1:string='HADIA MUZAFER';
+var firstname_1:string='hadia muzafer';
+var firstname_1:string='Hadia Muzafer';
