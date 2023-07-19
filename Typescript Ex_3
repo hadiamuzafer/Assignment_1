@@ -2,13 +2,13 @@
 //Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 let personName: string = 'Hadia muzafer';
 
-// Convert to upper case
+//this is for Convert to upper case
 var upperCaseName: string = personName.toUpperCase();
 
-// Convert to lower case
+//this is for Convert to lower case
 var lowerCaseName: string = personName.toLowerCase();
 
-// Convert to title case
+//this is for Convert to title case
 var titleCaseName: string = personName.replace(/(\w\S*)/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 console.log(`Original: {personName}`);
 (`Upper case: {upperCaseName}`);
