@@ -3,11 +3,11 @@
 let PersonName: string = 'Hadia muzafer';
 
 //this is for Convert to upper case
-var upperCaseName: string = PersonName.toUpperCase();
+let upperCaseName: string = PersonName.toUpperCase();
 
 //this is for Convert to lower case
-var lowerCaseName: string = PersonName.toLowerCase();
+let lowerCaseName: string = PersonName.toLowerCase();
 
 //this is for Convert to title case
-var titleCaseName: string = PersonName.replace(/(\w\S*)/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+let titleCaseName: string = PersonName.replace(/(\w\S*)/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 console.log(`Original: {PersonName}`),(`Upper case: {upperCaseName}`),(`Lower case: {lowerCaseName}`),(`Title case: {titleCaseName}`);
