@@ -1,0 +1,12 @@
+ /*Guest List: If you could invite anyone, living or deceased, to dinner, who would
+you invite? Make a list that includes at least three people you’d like to invite to
+dinner. Then use your list to print a message to each person, inviting them to
+dinner.*/
+
+let Guestlist=[
+  "Fatima", "Maureen", "arooj"
+];
+console.log(Guestlist[0]+" "+"hy tonight is the dinner_party at home please join us"  );
+console.log(Guestlist[1]+" "+"hy tonight is the dinner_party at home please join us"  );
+console.log(Guestlist[2]+" "+"hy tonight is the  dinner_party at home please join us"  );
+
