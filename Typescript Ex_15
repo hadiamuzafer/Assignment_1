@@ -1,0 +1,33 @@
+//Q15
+
+/*. Changing Guest List: You just heard that one of your guests can’t make the
+dinner, so you need to send out a new set of invitations. You’ll have to think of
+someone else to invite.*/
+
+//step1
+let guestlist: Array<string>=[
+    "fatima",
+    "mahreen",
+    "arooj"
+];
+//step2
+//print the name of the person who cant make it
+let guestwhocantmakeit:string="arooj"
+console.log(` ${guestwhocantmakeit} can't make it to dinner)
+//step2
+//replace the name of guest who can't make it
+let NewGuest:string="mehak"
+let indexOfguestwhocantmakeit = guestlist.indexOf
+(guestwhocantmakeit)
+//console.log(indexOfguestwhocantmakeit)
+//step3
+if (indexOfguestwhocantmakeit !==-1){
+    guestlist[indexOfguestwhocantmakeit ]=NewGuest
+
+}
+//step3
+//• Print a seconed set of invitation, one for each person who is still in your list.
+console.log("seconed set of invitation")
+guestlist.forEach((guest:string)=>{
+console.log( `${guest} you are invited for a dinner`)
+})
