@@ -1,0 +1,37 @@
+//Q16
+let guestlist:Array<string>=[
+"fatima","mahreen","mehak"
+];
+//step1
+/* Start with your program from Exercise 15. Add a print statement to the end of your
+program informing people that you found a bigger dinner table.*/
+
+for(let guest of guestlist){
+    console.log(`hy! ${guest} ,we  found a bigger dinner table
+    `)
+}
+//step2
+//• Add one new guest to the beginning of your array.
+let newguestatbeginning:string="iqra"
+guestlist.unshift(newguestatbeginning)
+console.log(guestlist)
+//step 3
+//Add one new guest to the middle of your array
+let newguestinmiddle:string="malaika"
+let middleIndex:number=Math.floor(guestlist.length/2)
+guestlist.splice(middleIndex,0,newguestinmiddle)
+console.log(guestlist)
+//step4
+/*. • Use append() to add one new guest
+to the end of your list. • Print a new set of invitation messages, one for each person in
+your list.*/
+
+let newguestatend:string="minahil"
+guestlist.push(newguestatend)
+
+console.log(guestlist)
+//last step
+console.log("new set of invitation")
+for(let guest of guestlist){
+    console.log(`dear ${guest} you are invited for a dinner`)
+}
