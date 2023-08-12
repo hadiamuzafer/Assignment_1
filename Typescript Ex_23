@@ -1,0 +1,57 @@
+//Q23
+/* Conditional Tests: Write a series of conditional tests. Print a statement describing
+each test and your prediction for the results of each test. Your code should look
+something like this:
+let car = 'subaru';
+console.log("Is car == 'subaru'? I predict True.")
+console.log(car == 'subaru')
+• Look closely at your results, and make sure you understand why each line evaluates to
+True or False.
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests
+evaluate to False.*/
+function runConditionalTests() {
+    // Test 1: Equality comparison
+    let test1Result = 5 == 5; // True
+    console.log("Test 1: Is 5 equal to 5? Result:", test1Result);
+
+    // Test 2: Inequality comparison
+    let test2Result = 2<5; // True
+    console.log("Test 2: Is 10 not equal to 5? Result:", test2Result);
+
+    // Test 3: Greater than comparison
+    let test3Result = 8 > 3; // True
+    console.log("Test 3: Is 8 greater than 3? Result:", test3Result);
+
+    // Test 4: Less than comparison
+    let test4Result = 2 < 7; // True
+    console.log("Test 4: Is 2 less than 7? Result:", test4Result);
+
+    // Test 5: Logical AND
+    let test5Result = true && false; // False
+    console.log("Test 5: Is true AND false? Result:", test5Result);
+
+    // Test 6: Logical OR
+    let test6Result = true || false; // True
+    console.log("Test 6: Is true OR false? Result:", test6Result);
+
+    // Test 7: Negation
+    let test7Value = 42;
+    let test7Result = !(test7Value === 42); // False
+    console.log("Test 7: Is 42 NOT equal to 42? Result:", test7Result);
+
+    // Test 8: 
+    let test8Result = 6>8; // False
+    console.log("Test 8: Is 6 is biggest number than 8 Result:", test8Result);
+
+    // Test 9: Checking if a number is even
+    let test9Value = 6;
+    let test9Result = test9Value % 2 === 0; // True
+    console.log("Test 9: Is 6 an even number? Result:", test9Result);
+
+    // Test 10: Checking if a string is empty
+    let test10Value = "";
+    let test10Result = test10Value === ""; // True
+    console.log("Test 10: Is the string empty? Result:", test10Result);
+}
+runConditionalTests()
+v
