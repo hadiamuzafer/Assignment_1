@@ -1,0 +1,23 @@
+//Q21
+interface Book{
+    title: string,
+    author: string,
+    publicationyear:number
+
+
+}
+//create an instances of the book interface
+const book1 = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    publicationYear: 1925
+};
+
+const book2 = {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    publicationYear: 1960
+};
+// Display the information about the books
+console.log("Book 1:", book1);
+console.log("Book 2:", book2);
