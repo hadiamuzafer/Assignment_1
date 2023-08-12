@@ -1,0 +1,61 @@
+//Q24
+?*More Conditional Tests: You don’t have to limit the number of tests you create to
+10. If you want to try more comparisons, write more tests. Have at least one True
+and one False result for each of the following:
+• Tests for equality and inequality with strings
+• Tests using the lower case function
+• Numerical tests involving equality and inequality, greater than and less than, greater
+than or equal to, and less than or equal to
+• Tests using "and" and "or" operators
+• Test whether an item is in a array
+• Test whether an item is not in a array*/
+function runExtendedConditionalTests() {
+    // Tests for equality and inequality with strings
+    let string1 = "apple";
+    let string2 = "orange";
+    let stringEqualityTest = string1 === string2; // False
+    let stringInequalityTest = string1 !== string2; // True
+    console.log("String Equality Test:", stringEqualityTest);
+    console.log("String Inequality Test:", stringInequalityTest);
+
+    // Tests using the lower case function
+    let originalText = "Hello";
+    let lowercaseText = originalText.toLowerCase();
+    let lowercaseTest = lowercaseText === "hello"; // True
+    console.log("Lowercase Test:", lowercaseTest);
+
+    // Numerical tests
+    let number1 = 10;
+    let number2 = 20;
+    let equalityTest = number1 === number2; // False
+    let inequalityTest = number1 !== number2; // True
+    let greaterThanTest = number2 > number1; // True
+    let lessThanTest = number1 < number2; // True
+    let greaterThanOrEqualTest = number2 >= number1; // True
+    let lessThanOrEqualTest = number1 <= number2; // True
+    console.log("Equality Test:", equalityTest);
+    console.log("Inequality Test:", inequalityTest);
+    console.log("Greater Than Test:", greaterThanTest);
+    console.log("Less Than Test:", lessThanTest);
+    console.log("Greater Than or Equal Test:", greaterThanOrEqualTest);
+    console.log("Less Than or Equal Test:", lessThanOrEqualTest);
+
+    // Tests using "and" and "or" operators
+    let trueValue = true;
+    let falseValue = false;
+    let andTest = trueValue && falseValue; // False
+    let orTest = trueValue || falseValue; // True
+    console.log("AND Test:", andTest);
+    console.log("OR Test:", orTest);
+
+    // Test whether an item is in an array
+    let fruits = ["apple", "banana", "orange"];
+    let isInArrayTest = fruits.includes("banana"); // True
+    console.log("Is in Array Test:", isInArrayTest);
+
+    // Test whether an item is not in an array
+    let isNotInArrayTest = !fruits.includes("grape"); // True
+    console.log("Is Not in Array Test:", isNotInArrayTest);
+}
+
+runExtendedConditionalTests();
