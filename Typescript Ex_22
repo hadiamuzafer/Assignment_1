@@ -1,0 +1,14 @@
+//Q22
+let myarray=[
+    1,2,3,4,5
+]
+try{
+    const value=myarray[10]
+}catch (error){
+    console.log("Error:",error)
+
+}
+//corecting the array
+const validIndex=2
+const  correctedvalue=myarray[validIndex];
+console.log("corected value:" ,correctedvalue )
