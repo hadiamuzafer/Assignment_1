@@ -1,0 +1,37 @@
+//Q45
+/*Cars: Write a function that stores information about a car in an Object. The
+function should always receive a manufacturer and a model name. It should then
+accept an arbitrary number of keyword arguments. Call the function with the
+required information and two other name-value pairs, such as a color or an
+optional feature. Print the Object that’s returned to make sure all the information
+was stored correctly.*/
+
+
+
+
+interface Car {
+    manufacturer: string;
+    model: string;
+    [key: string]: any; // Allow for arbitrary additional properties
+}
+
+function createCar(manufacturer: string, model: string, ...options: any[]) {
+    let car: Car = {
+        manufacturer,
+        model,
+    };
+
+    // Process any additional options and add them to the car object
+    for (let i = 0; i < options.length; i += 2) {
+        let key = options[i];
+        let value = options[i + 1];
+        car[key] = value;
+    }
+
+    return car;
+}
+
+const car info createCar("Toyota", "Camry", "color", "black", "year", 2021);
+
+console.log(carinfo);
+
