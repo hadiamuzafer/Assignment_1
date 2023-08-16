@@ -16,4 +16,4 @@ guests.push("hadi");
 
 // Print invitation messages
 guestlist.forEach((guest:string)=>{
-console.log(${guest} You Are Invited For A Dinner})
+console.log(`${guest} You Are Invited For A Dinner`})
