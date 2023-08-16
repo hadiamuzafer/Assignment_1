@@ -1,19 +1,21 @@
 //Q16
-let guestlist: string[] = ["Fatima, "Malika", "Mahreen",Arooj];
+let guestlist: string[] = ["fatima", "malika", "ayesha"];
 
-for (let guestlists Of guestlist){
-console.log(`${guestlists} We found a bigger dinner table`);}
+// Inform about the bigger dinner table
+console.log("Good news! We found a bigger dinner table.");
 
 // Add a new guest to the beginning of the array
-guests.unshift("hifza");
+guestlist.unshift("Hifza");
 
 // Add a new guest to the middle of the array
-const middleIndex = Math.floor(guests.length / 2);
-guests.splice(middleIndex, 0, "zainab");
+let  middleIndex = Math.floor(guestlist.length / 2);
+guestlist.splice(middleIndex, 0, "zainab");
 
 // Add a new guest to the end of the array using append()
-guests.push("hadi");
+guestlist.push("arooj");
 
 // Print invitation messages
-guestlist.forEach((guest:string)=>{
-console.log(`${guest} You Are Invited For A Dinner`})
+for (let guest of guestlist) {
+    console.log(`Dear ${guest}, you are invited to dinner. Please  come and join us thank you!.`);
+}
+
