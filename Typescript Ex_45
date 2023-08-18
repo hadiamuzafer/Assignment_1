@@ -31,7 +31,7 @@ function createCar(manufacturer: string, model: string, ...options: any[]) {
     return car;
 }
 
-const car info createCar("Toyota", "Camry", "color", "black", "year", 2021);
+const carinfocreateCar("Toyota", "Camry", "color", "black", "year", 2021);
 
-console.log(carinfo);
+console.log( carinfocreateCar);
 
